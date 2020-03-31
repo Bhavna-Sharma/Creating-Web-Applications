@@ -1,0 +1,28 @@
+#Download links:
+1. visual studio community 2017 
+  Download link: https://www.visualstudio.com/downloads/
+ 2.Xampp. 
+  Download link: https://www.apachefriends.org/downloa...
+
+#Configure the web environment first:
+1. Download, Install and Open Xampp control panal 
+2. Configure Apache for CGI
+ click on config then select Apache(httpd.conf)
+ In httpd.conf search for:
+ DocumentRoot "C:/xampp/htdocs" replace with DocumentRoot "C:/xampp/cgi-bin"
+ add Options Indexes FollowSymLinks Includes ExecCGI
+3. Now, Write C++ code for the website in Visual studio or any IDE you prefere.
+#Writing C++ code for the website in Visual studio
+1. Select File/New/ Project or Cntl+Shift+N
+2. Select Visual C++ / General / Empity Project
+3. In Solution Explorer
+ -Right click on Source File
+ click Add/ New Item
+4. Select C++ File (.cpp)
+5. Write code in Source.cpp
+6. Change the Project properties 
+ Output directory: C:/xampp/cgi-bin/helloweb
+ Target name: helloweb
+ Target extension: .cgi
+7. Build the C++ project
+8.Start Apache from Xampp control panel.
